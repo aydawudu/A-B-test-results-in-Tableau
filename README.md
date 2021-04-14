@@ -26,5 +26,24 @@ action|string|Identifies which action triggered the event. See below.
 checkin|integer|How many seconds the page has been open for.
 page_id|string|A unique identifier for correlating page visits and check-ins.
 n_results|integer|Number of hits returned to the user. Only shown for searchResultPage events.
-result\_position|integer|The position of the link to the visited page on the search engine results page (SER
-searchResultPage: 
+result\_position|integer|The position of the link to the visited page on the search engine results page (SERP).
+
+The following are possible values for the action field of an event:
+
+* searchResultPage: when a new search is performed and the user is shown a search results page.\
+* visitPage: when the user clicks a link in the results.\
+* checkin: when the user has remained on the page for a pre-specified amount of time.
+
+#Example Session
+**uuid**|**timestamp**|**session\_id**|**group**|**action**|**checkin**|**page\_id**|**n\_results**|**result\_position**
+-----|-----|-----|-----|-----|-----|-----|-----|-----
+4f699f344515554a9371fe4ecb5b9ebc|20160305195246|001e61b5477f5efc|b|searchResultPage|NA|1b341d0ab80eb77e|7|NA
+759d1dc9966353c2a36846a61125f286|20160305195302|001e61b5477f5efc|b|visitPage|NA|5a6a1f75124cbf03|NA|1
+77efd5a00a5053c4a713fbe5a48dbac4|20160305195312|001e61b5477f5efc|b|checkin|10|5a6a1f75124cbf03|NA|1
+42420284ad895ec4bcb1f000b949dd5e|20160305195322|001e61b5477f5efc|b|checkin|20|5a6a1f75124cbf03|NA|1
+8ffd82c27a355a56882b5860993bd308|20160305195332|001e61b5477f5efc|b|checkin|30|5a6a1f75124cbf03|NA|1
+2988d11968b25b29add3a851bec2fe02|20160305195342|001e61b5477f5efc|b|checkin|40|5a6a1f75124cbf03|NA|1
+
+This user's search query returned 7 results, they clicked on the first result, and stayed on the page between 40 and 50 seconds. (The next check-in would have happened at 50s.)
+
+
