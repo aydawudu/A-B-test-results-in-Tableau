@@ -46,4 +46,7 @@ The following are possible values for the action field of an event:
 
 This user's search query returned 7 results, they clicked on the first result, and stayed on the page between 40 and 50 seconds. (The next check-in would have happened at 50s.)
 
+# Tableau Results
+You can check out the tableau analysis [here] (https://public.tableau.com/views/ABTestingAnalyzingWikipediasNewSearchFuntionality/Story1?:language=en&:display_count=y&:origin=viz_share_link)
+
 
