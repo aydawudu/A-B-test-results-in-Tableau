@@ -16,18 +16,17 @@ and other metrics outside the scope of this task. Event Logging uses JavaScript 
 # Data
 The dataset comes from a [tracking schema](https://meta.wikimedia.org/wiki/Schema:TestSearchSatisfaction2) that Discovery uses for assessing user satisfaction. Desktop users are randomly sampled to be anonymously tracked by this schema which uses a "I'm alive" pinging system to estimate how long users stay on the pages they visit. The dataset contains just a little more than a week of EL data.
 
-Column	Value	Description
-uuid	string	Universally unique identifier (UUID) for backend event handling.
-timestamp	integer	The date and time (UTC) of the event.
-session_id	string	A unique ID identifying individual sessions.
-group	string	A label ("a" or "b").
-action	string	Identifies which action triggered the event. See below.
-checkin	integer	How many seconds the page has been open for.
-page_id	string	A unique identifier for correlating page visits and check-ins.
-n_results	integer	Number of hits returned to the user. Only shown for searchResultPage events.
-result_position	integer	The position of the link to the visited page on the search engine results page (SERP).
-The following are possible values for the action field of an event:
-
+**Column**|**Value**|**Description**
+-----|-----|-----
+uuid|string|Universally unique identifier (UUID) for backend event handling.
+timestamp|integer|The date and time (UTC) of the event.
+session\_id|string|A unique ID identifying individual sessions.
+group|string|A label ("a" or "b").
+action|string|Identifies which action triggered the event. See below.
+checkin|integer|How many seconds the page has been open for.
+page_id|string|A unique identifier for correlating page visits and check-ins.
+n_results|integer|Number of hits returned to the user. Only shown for searchResultPage events.
+result\_position|integer|The position of the link to the visited page on the search engine results page (SER
 searchResultPage: when a new search is performed and the user is shown a search results page.
 visitPage: when the user clicks a link in the results.
 checkin: when the user has remained on the page for a pre-specified amount of time.
