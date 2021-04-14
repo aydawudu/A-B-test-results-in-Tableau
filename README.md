@@ -8,8 +8,8 @@ Today you will become part of Discovery department at Wikimedia Foundation for a
 
 Discovery team relies on event logging (EL) to track a variety of performance and usage metrics to help the team make decisions. Specifically, Discovery is interested in:
 
-  *clickthrough rate*: the proportion of search sessions where the user clicked on one of the results displayed\
-  *zero results rate*: the proportion of searches that yielded 0 results
+  * *clickthrough rate*: the proportion of search sessions where the user clicked on one of the results displayed\
+  * *zero results rate*: the proportion of searches that yielded 0 results
 and other metrics outside the scope of this task. Event Logging uses JavaScript to asynchronously send messages (events) to Discovery servers when the user has performed specific actions.
 
 Data
