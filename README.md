@@ -1,6 +1,7 @@
 # A/B test results inTableau: Analyzing Wikipedia’s new search functionality
+This is adapted case study to illustrate the use of tableau in A/B Testing
 
-# Case Study
+# Case Study Background
 The case was inspired by Wikimedia Foundation Data Analyst Technical Assignment. The original dataset was transformed and adapted for the purposes of the workshop.
 
 Today you will become part of Discovery department at Wikimedia Foundation for a day. Your team just made a big change to the Wikipedia Search experience and ran an A/B test to determine whether the new version of the search is better than the old one. It is your task to analyze the data and prepare a brief explaining the results of the test.
