@@ -27,6 +27,4 @@ checkin|integer|How many seconds the page has been open for.
 page_id|string|A unique identifier for correlating page visits and check-ins.
 n_results|integer|Number of hits returned to the user. Only shown for searchResultPage events.
 result\_position|integer|The position of the link to the visited page on the search engine results page (SER
-searchResultPage: when a new search is performed and the user is shown a search results page.
-visitPage: when the user clicks a link in the results.
-checkin: when the user has remained on the page for a pre-specified amount of time.
+searchResultPage: 
